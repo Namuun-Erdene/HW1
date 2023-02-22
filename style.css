@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.box{
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 20%;
+}
+.box:hover input{
+    width: 250px;
+}
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fas{
+    color: black;
+    font-size: 18px;
+}
+/****** Header ******/
+@media(max-width: 768px){
+.header-social-icon{
+    display: none;
+}
+}
+/****** Navbar ******/
+nav{
+    color: aliceblue;
+    box-shadow: 1px 1px 2px #4444;
+}
+.navbar-nav .nav-link{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar-toggler{
+    outline: none!important;
+    padding: none!important;
+}
+
+/***** Carousel *****/
+.carousel-inner .carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before{
+    content: '';
+    background-color: rgba(41, 41, 41, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-inner .carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+
+.carousel-inner .carousel-caption h3{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0px auto 10px auto;
+}
+.carousel-inner .carousel-caption p{
+    font-size: 15px;
+    width: 80%;
+    margin: 0px auto 20px auto;
+}
+
+@media(max-width: 768px){
+    .carousel-inner .carousel-caption h3{
+        font-size: 38px;
+    }
+}
+
+@media(max-width:577px){
+    .carousel-inner .carousel-caption h3{
+        font-size: 25px;
+    }
+    .carousel-inner .carousel-caption p{
+        font-size: 13px;
+    }
+}
+
+/*** Btn ***/
+.btn-outline{
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    transition: .5s;
+    bottom: -15px;
+}
+.btn-outline::before,
+.btn-outline::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: .5s;
+}
+.btn-outline::before{
+    top: -10px;
+    left: -10px;
+    border-width: 2px 0 0 2px;
+}
+.btn-outline::after{
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 2px 2px 0;
+}
+.btn-outline:hover::before,
+.btn-outline:hover::after{
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+}
+/***** About ****/
+#about-us-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer; 
+ }
+ 
+ #about-us-container .post img{
+     transition: 0.3s ease;
+ }
+ 
+ #about-us-container .post:hover img{
+    transform: scale(1.3) rotate(-10deg); 
+    opacity: 0.8;
+ }
+ #about-us-container .post h3{
+     transition: 0.3s ease;
+     cursor: pointer;
+  }
+ #about-us-container .post:hover h3{
+     color: #999;
+  }
+
+  .icon{
+    font-size: 13px;
+}
+
+/***** Course ****/
+.course .boxx{
+    padding: 10px 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/**** Footer ****/
+footer{
+    background-color: #212529;
+}
+footer h5{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer h6{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+}
+footer li a:hover{
+    color: #D8D8D8;
+}
+
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+
+footer .copyright a{
+    color: rgb(255, 255, 255);
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+
+footer .copyright a:hover{
+    color: #fff;
+    background-color: #3d3b3b;
+}
